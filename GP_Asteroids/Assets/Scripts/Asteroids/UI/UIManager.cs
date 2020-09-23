@@ -64,33 +64,33 @@ namespace Asteroids.UI
 
 		private void FadeOutOverlay() {
 			transitionOverlay.gameObject.SetActive( true );
-			// LeanTween.alpha( transitionOverlay, 0.0f, initialFadeDuration )
-			// 	.setEase( LeanTweenType.easeOutSine )
-			// 	.setOnComplete( () => {
-			// 		transitionOverlay.gameObject.SetActive( false );
-			// 	} );
+			LeanTween.alpha( transitionOverlay, 0.0f, initialFadeDuration )
+				.setEase( LeanTweenType.easeOutSine )
+				.setOnComplete( () => {
+					transitionOverlay.gameObject.SetActive( false );
+				} );
 		}
 
 		private void TransitionScreen( GameObject screen ) {
 			transitionOverlay.gameObject.SetActive( true );
 
-			// LeanTween.alpha( transitionOverlay, 1.0f, transitionDuration )
-			// 	.setEase( LeanTweenType.easeOutSine )
-			// 	.setOnComplete( () => {
-			// 		screen.SetActive( true );
-			//
-			// 		if( current != null ) {
-			// 			current.SetActive( false );
-			// 		}
-			// 		current = screen;
-			//
-			// 		LeanTween.alpha( transitionOverlay, 0.0f, transitionDuration )
-			// 			.setEase( LeanTweenType.easeOutSine )
-			// 			.setOnComplete( () => {
-			// 				transitionOverlay.gameObject.SetActive( false );
-			// 			} );
-			//
-			// 	} );
+			LeanTween.alpha( transitionOverlay, 1.0f, transitionDuration )
+				.setEase( LeanTweenType.easeOutSine )
+				.setOnComplete( () => {
+					screen.SetActive( true );
+			
+					if( current != null ) {
+						current.SetActive( false );
+					}
+					current = screen;
+			
+					LeanTween.alpha( transitionOverlay, 0.0f, transitionDuration )
+						.setEase( LeanTweenType.easeOutSine )
+						.setOnComplete( () => {
+							transitionOverlay.gameObject.SetActive( false );
+						} );
+			
+				} );
 		}
 
 		private void OnTitleScreenComplete() {

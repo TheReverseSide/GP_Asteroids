@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886ff8a5c8999440196cb1afbdc8939f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidPrefab: {fileID: 0}
-  offscreenPadding: 0
+  asteroidPrefab: {fileID: 100318, guid: 718814e5c607341a791f85dad9fc6882, type: 3}
+  offscreenPadding: 0.6
   startingAsteroidCount: 1

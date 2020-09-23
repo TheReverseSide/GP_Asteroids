@@ -11,7 +11,7 @@ namespace Asteroids
     [RequireComponent( typeof( FireWeapon ) )]
     [RequireComponent( typeof( CollisionWithAsteroid ) )]
     [RequireComponent( typeof( PlayerDeath ) )]
-    [RequireComponent( typeof( PlayerShield ) )]
+    // [RequireComponent( typeof( PlayerShield ) )]
 
     public class Player : MonoBehaviour
     {
@@ -21,7 +21,7 @@ namespace Asteroids
         private PlayerController controller;
         private CollisionWithAsteroid collisionWithAsteroid;
         private PlayerDeath playerDeath;
-        private PlayerShield shield;
+        // private PlayerShield shield;
         
         void Awake()
         {
@@ -33,7 +33,7 @@ namespace Asteroids
             playerDeath = GetComponent<PlayerDeath>();
             playerDeath.EventDieComplete += OnDeathComplete; //What do?
 
-            shield = GetComponent<PlayerShield>();
+            // shield = GetComponent<PlayerShield>();
         }
 
         public void Spawn()
@@ -48,13 +48,15 @@ namespace Asteroids
             //Destroy asteroid
             asteroid.Collision(int.MaxValue); //Overkill with MaxValue to be sure
 
+            
             //If shields arent up, you dead
-            if (!shield.IsInvincible) //Could have different naming convention for boosl 
-            {
-                // controller.Reset();
-                // playerDeath.Die();
-                gameObject.SetActive(false);
-            }
+            // TODO: Create some other death method now that we arent using the shield
+            // if (!shield.IsInvincible) //Could have different naming convention for boosl 
+            // {
+            //     // controller.Reset();
+            //     // playerDeath.Die();
+            //     gameObject.SetActive(false);
+            // }
         }
 
         private void OnDeathComplete()

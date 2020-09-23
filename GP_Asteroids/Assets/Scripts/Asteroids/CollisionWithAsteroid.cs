@@ -18,6 +18,7 @@ namespace Asteroids
 
                 // disptach event.
                 if( EventCollision != null ) {
+                    Debug.Log("Is it null?");
                     EventCollision( asteroid );
                 }
             }

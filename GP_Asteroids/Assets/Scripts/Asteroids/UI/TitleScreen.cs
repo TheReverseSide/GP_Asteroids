@@ -21,29 +21,12 @@ namespace Asteroids.UI
         private AudioClip startSFX;
 
         private bool isComplete;
-
-        //===================================================
-        // UNITY METHODS
-        //===================================================
-
-        /// <summary>
-        /// Awake.
-        /// </summary>
-        void Awake() {
-
-        }
-
-        /// <summary>
-        /// OnEnable.
-        /// </summary>
+        
         void OnEnable() {
             isComplete = false;
-            AudioManager.Instance.PlayMusic( music );
+            // FIXME AudioManager.Instance.PlayMusic( music );
         }
-
-        /// <summary>
-        /// Update.
-        /// </summary>
+        
         void Update() {
             if( !isComplete ) {
                 if( Input.GetKeyDown( KeyCode.Space ) ) {
@@ -52,21 +35,11 @@ namespace Asteroids.UI
             }
         }
 
-        //===================================================
-        // PUBLIC METHODS
-        //===================================================
-
-        //===================================================
-        // PRIVATE METHODS
-        //===================================================
-
-        /// <summary>
-        /// Dispatches complete when SPACE is Pressed.
-        /// </summary>
         private void StartPressed() {
             isComplete = true;
-            AudioManager.Instance.PlaySFX( startSFX );
+            // FIXME AudioManager.Instance.PlaySFX( startSFX );
 
+            
             if( EventComplete != null ) {
                 EventComplete();
             }
