@@ -32,6 +32,7 @@ namespace Asteroids
 
             if (EventDieComplete != null) //if someone is listening...
             {
+                // Debug.Log("Someone is listening");
                 EventDieComplete(); //When is something added to this?
             }
         }

@@ -28,7 +28,7 @@ namespace Asteroids
             controller = GetComponent<PlayerController>();
 
             collisionWithAsteroid = GetComponent<CollisionWithAsteroid>();
-            //collisionWithAsteroid.EventCollision += OnCollisionWithAsteroid; //What does EventCollision do?
+            collisionWithAsteroid.EventCollision += OnCollisionWithAsteroid; //What does EventCollision do?
 
             playerDeath = GetComponent<PlayerDeath>();
             playerDeath.EventDieComplete += OnDeathComplete; //What do?
@@ -48,15 +48,10 @@ namespace Asteroids
             //Destroy asteroid
             asteroid.Collision(int.MaxValue); //Overkill with MaxValue to be sure
 
-            
-            //If shields arent up, you dead
-            // TODO: Create some other death method now that we arent using the shield
-            // if (!shield.IsInvincible) //Could have different naming convention for boosl 
-            // {
-            //     // controller.Reset();
-            //     // playerDeath.Die();
-            //     gameObject.SetActive(false);
-            // }
+            // Kill the player
+            controller.Reset();
+            playerDeath.Die();
+            gameObject.SetActive(false);
         }
 
         private void OnDeathComplete()

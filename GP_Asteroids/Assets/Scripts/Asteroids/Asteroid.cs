@@ -51,7 +51,7 @@ namespace Asteroids
         {
             health.ReduceHealth(damage);
 
-            AudioManager.Instance.PlaySFX(collisionSound);
+            //FIXME AudioManager.Instance.PlaySFX(collisionSound);
 
             if (health.Value > 0)
             {
