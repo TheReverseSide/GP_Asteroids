@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 7f86491e4ae3e04458aecf12ab2b4926
+<<<<<<< HEAD:GP_Asteroids/Assets/Assets.meta
+guid: 4a1785cfd6eba444cbe1792c3c14a045
+=======
+guid: 9ac108f5aa1754500a3a9e6ebe4e45e3
+>>>>>>> development_branch:GP_Asteroids/Assets/Animations.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
