@@ -35,8 +35,15 @@ namespace Asteroids
         /// <summary>
         /// Update.
         /// </summary>
-        public virtual void Update() {
-            // convert transform position to viewport position.
+        public virtual void Update() { // convert transform position to viewport position.
+            
+            //NOTICE OVERRIDING NOTES
+            // The method in the parent class has 'virtual' in it
+            // The children receive 'override'
+            // ANy child 'override' can override the virtual parent
+            // Then is the base keyword some way to refer back to the original virtual method, but allows for the addition of other functionality
+            
+            
             viewportPos = Camera.main.WorldToViewportPoint( transform.position );
             isOffscreen = false;
 

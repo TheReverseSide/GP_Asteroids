@@ -22,7 +22,7 @@ namespace Asteroids
 		private GameObject gameHolder;
 
 		[SerializeField]
-		private int startingLives = 3;
+		private int startingLives = 1;
 
 		public int Lives {
 			get;

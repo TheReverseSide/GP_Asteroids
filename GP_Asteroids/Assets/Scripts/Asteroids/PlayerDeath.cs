@@ -17,7 +17,7 @@ namespace Asteroids
         
         public void Die()
         {
-            // explosionGO = Instantiate(explosionPrefab, transform.position, Quaternion.identity) as GameObject;
+            explosionGO = Instantiate(explosionPrefab, transform.position, Quaternion.identity) as GameObject;
             // I wonder why typecasting is necessary here
 
             // AudioManager.Instance.PlaySFX(deathSound);
@@ -28,7 +28,7 @@ namespace Asteroids
         
         private void DieComplete()
         {
-            // Destroy(explosionGO);
+            Destroy(explosionGO);
 
             if (EventDieComplete != null) //if someone is listening...
             {
