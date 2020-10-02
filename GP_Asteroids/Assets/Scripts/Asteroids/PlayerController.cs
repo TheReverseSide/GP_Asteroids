@@ -8,10 +8,11 @@ namespace Asteroids
     public class PlayerController : MonoBehaviour
     {
 
-        [SerializeField] private float maxVelocity = 5.0f;
-        [SerializeField] private float rotationSpeed = 250.0f;
-        [SerializeField] private float friction = .95f;
-        [SerializeField] private float acceleration = 5.0f;
+
+        [Range(1f, 10f)][SerializeField] private float maxVelocity = 5.0f;
+        [Range(100f, 500f)][SerializeField] private float rotationSpeed = 250.0f;
+        [Range(0.0f, 1.0f)][SerializeField] private float friction = .95f;
+        [Range(1f, 10f)][SerializeField] private float acceleration = 5.0f;
 
         private Vector3 velocity;
         private Vector3 clampedVelocity;
