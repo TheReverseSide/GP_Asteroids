@@ -52,10 +52,11 @@ namespace Asteroids
             // Kill the player
             controller.Reset();
             playerDeath.Die();
-            var children = new List<GameObject>();
-            foreach (Transform child in transform) children.Add(child.gameObject);
-            children.ForEach(child => child.gameObject.SetActive(false));
-            audioInputManager.enabled = false;
+            //TODO - This needs to be reactivated at some point
+            // var children = new List<GameObject>();
+            // foreach (Transform child in transform) children.Add(child.gameObject);
+            // children.ForEach(child => child.gameObject.SetActive(false));
+            // audioInputManager.enabled = false;
                 // SetActive(false);
             gameObject.SetActive(false);
         }

@@ -2102,6 +2102,16 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.31
       objectReference: {fileID: 0}
+    - target: {fileID: 6821550854158595232, guid: 85a01035942ba4db4a0dd115defef86a,
+        type: 3}
+      propertyPath: maxSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821550854158595232, guid: 85a01035942ba4db4a0dd115defef86a,
+        type: 3}
+      propertyPath: acceleration
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6821550854158595236, guid: 85a01035942ba4db4a0dd115defef86a,
         type: 3}
       propertyPath: explosionPrefab

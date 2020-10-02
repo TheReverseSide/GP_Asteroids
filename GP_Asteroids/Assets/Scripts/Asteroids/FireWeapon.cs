@@ -53,7 +53,7 @@ namespace Asteroids
                 // get game object from pool.
                 GameObject weaponGO = weaponPool.GetGameObject();
                 weaponGO.transform.position = emitterTransform.position;
-                weaponGO.transform.rotation = gameObject.transform.rotation;
+                weaponGO.transform.rotation = emitterTransform.rotation;
 
                 // needed to pass the weapon pool in without having to "Find" it in the scene.
                 Laser weapon = weaponGO.GetComponent<Laser>();
