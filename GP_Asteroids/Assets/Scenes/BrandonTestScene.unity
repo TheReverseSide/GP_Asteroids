@@ -401,6 +401,18 @@ Transform:
   m_Father: {fileID: 1937713429}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1248766146 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6821550854158595238, guid: 85a01035942ba4db4a0dd115defef86a,
+    type: 3}
+  m_PrefabInstance: {fileID: 6821550855245317852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03b47abde7e64b1ba265e7d19a7211c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1330279028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6821550854158595240, guid: 85a01035942ba4db4a0dd115defef86a,
@@ -707,6 +719,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2043301104 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1761776729558479107, guid: 126fbfdf77b4b4d13be67f410d122224,
+    type: 3}
+  m_PrefabInstance: {fileID: 3799795231774417456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2043301107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043301104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67f262274193f44258d6818294742e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireWeapon: {fileID: 1248766146}
 --- !u!1001 &33921917634229380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2136,6 +2167,11 @@ PrefabInstance:
       propertyPath: optionalParent
       value: 
       objectReference: {fileID: 952664787}
+    - target: {fileID: 6821550854158595242, guid: 85a01035942ba4db4a0dd115defef86a,
+        type: 3}
+      propertyPath: audioInputManager
+      value: 
+      objectReference: {fileID: 2043301107}
     - target: {fileID: 6821550854158595247, guid: 85a01035942ba4db4a0dd115defef86a,
         type: 3}
       propertyPath: m_Name
