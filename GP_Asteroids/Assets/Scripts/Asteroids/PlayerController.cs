@@ -8,7 +8,6 @@ namespace Asteroids
     public class PlayerController : MonoBehaviour
     {
 
-
         [Range(1f, 10f)][SerializeField] private float maxVelocity = 5.0f;
         [Range(100f, 500f)][SerializeField] private float rotationSpeed = 250.0f;
         [Range(0.0f, 1.0f)][SerializeField] private float friction = .95f;
@@ -35,7 +34,7 @@ namespace Asteroids
             
             //Get opposite of horiz. input and use it for rotation * rotSpeed
             transform.Rotate(new Vector3(0,0, -inputX), rotationSpeed * Time.deltaTime); //Second parameter is angle?
-
+            
             velocity += Time.deltaTime * (inputY * (transform.up * acceleration));
 
             // Applies friction if no user input
