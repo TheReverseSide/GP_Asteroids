@@ -7,10 +7,11 @@ namespace Asteroids
     
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField, Range(1f, 10f)] private float maxVelocity = 5.0f;
-        [SerializeField, Range(100f, 500f)] private float rotationSpeed = 250.0f;
-        [SerializeField, Range(0.0f, 1.0f)] private float friction = .95f;
-        [SerializeField, Range(1f, 10f)] private float acceleration = 5.0f;
+
+        [SerializeField] private float maxVelocity = 5.0f;
+        [SerializeField] private float rotationSpeed = 250.0f;
+        [SerializeField] private float friction = .95f;
+        [SerializeField] private float acceleration = 5.0f;
         [SerializeField, Range(0f, 100f)] float maxSpeed = 7f;
         [SerializeField, Range(0f, 100f)] float maxAcceleration = 10f;
 
