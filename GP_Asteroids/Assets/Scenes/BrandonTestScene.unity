@@ -529,7 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1d610a6b2cc4326aee2b7fbba3ed4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  anim: {fileID: 1064567629}
 --- !u!114 &1248766146 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6821550854158595238, guid: 85a01035942ba4db4a0dd115defef86a,
@@ -2217,7 +2217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1674992172, guid: 85a01035942ba4db4a0dd115defef86a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1674992174, guid: 85a01035942ba4db4a0dd115defef86a, type: 3}
       propertyPath: m_SortingLayerID
