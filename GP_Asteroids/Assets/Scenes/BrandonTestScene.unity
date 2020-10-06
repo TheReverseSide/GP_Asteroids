@@ -412,6 +412,8 @@ GameObject:
   - component: {fileID: 1064567628}
   - component: {fileID: 1064567630}
   - component: {fileID: 1064567629}
+  - component: {fileID: 1064567631}
+  - component: {fileID: 1064567632}
   m_Layer: 0
   m_Name: PlayerBody
   m_TagString: Untagged
@@ -503,6 +505,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1064567631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064567627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca398fab149984baca0b7de20138cfae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1064567632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064567627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1d610a6b2cc4326aee2b7fbba3ed4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1064567629}
 --- !u!114 &1248766146 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6821550854158595238, guid: 85a01035942ba4db4a0dd115defef86a,
@@ -2188,6 +2215,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1674992172, guid: 85a01035942ba4db4a0dd115defef86a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1674992174, guid: 85a01035942ba4db4a0dd115defef86a, type: 3}
       propertyPath: m_SortingLayerID
       value: -1762406807
@@ -2217,7 +2248,7 @@ PrefabInstance:
     - target: {fileID: 6821550854158595232, guid: 85a01035942ba4db4a0dd115defef86a,
         type: 3}
       propertyPath: maxAcceleration
-      value: 1.9
+      value: 4.6
       objectReference: {fileID: 0}
     - target: {fileID: 6821550854158595232, guid: 85a01035942ba4db4a0dd115defef86a,
         type: 3}
