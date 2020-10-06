@@ -9,9 +9,9 @@ namespace Asteroids
     {
 
         [SerializeField] private float maxVelocity = 5.0f;
-        [SerializeField] private float rotationSpeed = 250.0f;
+        // [SerializeField] private float rotationSpeed = 250.0f;
         [SerializeField] private float friction = .95f;
-        [SerializeField] private float acceleration = 5.0f;
+        // [SerializeField] private float acceleration = 5.0f;
         [SerializeField, Range(0f, 100f)] float maxSpeed = 7f;
         [SerializeField, Range(0f, 100f)] float maxAcceleration = 10f;
 
@@ -43,8 +43,9 @@ namespace Asteroids
                 Mathf.MoveTowards(velocity.y, desiredVelocity.y, maxSpeedChange);
             
             // Applies friction if no user input
-            if (inputY == 0.0f)
+            if (inputY == 0.0f && inputX == 0.0f)
             {
+                Debug.Log("Applying friction");
                 velocity *= friction;
             }
             
