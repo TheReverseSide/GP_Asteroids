@@ -45,7 +45,7 @@ namespace Asteroids
             // Applies friction if no user input
             if (inputY == 0.0f && inputX == 0.0f)
             {
-                Debug.Log("Applying friction");
+                // Debug.Log("Applying friction");
                 velocity *= friction;
             }
             

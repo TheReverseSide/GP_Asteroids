@@ -9,7 +9,7 @@ namespace Asteroids
     public class FireWeapon : MonoBehaviour {
 
         [SerializeField]
-        private float fireRate = 0.5f;
+        private float fireRate = 0.7f;
 
         [SerializeField]
         private Transform emitterTransform;
@@ -35,36 +35,43 @@ namespace Asteroids
         
         void Update() {
             // mouse button and Space.
-            // if( Input.GetButton( "Fire1" ) )
-            // {
-            //     Fire();
-            // } 
+            if( Input.GetButton( "Fire1" ) )
+            {
+                FireChecker();
+            } 
+        }
+
+        public void FireChecker()
+        {
+            endTime = Time.time;
+            
+            if (fireRate == 0 && (endTime - startTime) > 1f)
+            {
+                //Second part prevents that first erroneus firing
+                Fire();
+            }
+            else if (Input.GetButton("Fire1") && Time.time > nextFire && fireRate > 0)
+            {
+                //I added "&& fireRate > 0", because if not, this will run if the user decides
+                //to hold the button, as "GetButtonDown" only returns true the frame the button
+                //is pressed, and while its hold, is false, so the "else" will run, and so will this.
+                nextFire = Time.time + fireRate;
+                Fire();
+            }
         }
 
         public void Fire()
         {
-            endTime = Time.time;
+            // get game object from pool.
+            GameObject weaponGO = weaponPool.GetGameObject();
+            weaponGO.transform.position = emitterTransform.position;
+            weaponGO.transform.rotation = emitterTransform.rotation;
 
-            // checks against the firerate and fires laser from objectpool.
-            if( Time.time > nextFire && (endTime - startTime) > 1f) {//Second part prevents that first erroneus firing
-                Debug.Log("Firing");
-                nextFire = Time.time + fireRate;
+            // needed to pass the weapon pool in without having to "Find" it in the scene.
+            Laser weapon = weaponGO.GetComponent<Laser>();
+            weapon.Init(weaponPool, 1);
 
-                // get game object from pool.
-                GameObject weaponGO = weaponPool.GetGameObject();
-                weaponGO.transform.position = emitterTransform.position;
-                weaponGO.transform.rotation = emitterTransform.rotation;
-
-                // needed to pass the weapon pool in without having to "Find" it in the scene.
-                Laser weapon = weaponGO.GetComponent<Laser>();
-                weapon.Init(weaponPool, 1);
-
-                AudioManager.Instance.PlaySFX(sound, soundVolume);
-            }
-            else {
-                nextFire = Time.time;
-                Debug.Log("Didnt fire");
-            }
+            AudioManager.Instance.PlaySFX(sound, soundVolume);
         }
     }
 }
