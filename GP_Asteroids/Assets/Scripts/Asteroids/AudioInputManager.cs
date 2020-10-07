@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Asteroids
@@ -10,6 +11,8 @@ namespace Asteroids
 
         public FireWeapon fireWeapon;
         private string _device;
+
+        private bool isFiring;
      
         //mic initialization
         void InitMic(){
@@ -50,14 +53,22 @@ namespace Asteroids
             // pass the value to a static var so we can access it from anywhere
             float dB = 20 * Mathf.Log10(Mathf.Abs(MicLoudness));
 
-            if (dB > -20)
+            if (dB > -20 && !isFiring)
             {
-                // Debug.Log("Shoot!");
+                // Debug.Log("Firing!" + Time.time);
+                isFiring = true;
                 fireWeapon.Fire();
+                Task.Delay(500).ContinueWith(t=> setFiringFalse());
             }
             MicLoudness = LevelMax ();
         }
-     
+
+        void setFiringFalse()
+        {
+            isFiring = false;
+            // Debug.Log("No longer firing + Time.time");
+        }
+        
         bool _isInitialized;
         // start mic when scene starts
         void OnEnable()
