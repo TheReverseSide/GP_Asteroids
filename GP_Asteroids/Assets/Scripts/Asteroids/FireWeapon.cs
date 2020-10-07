@@ -68,7 +68,7 @@ namespace Asteroids
             weaponGO.transform.rotation = emitterTransform.rotation;
 
             // needed to pass the weapon pool in without having to "Find" it in the scene.
-            Laser weapon = weaponGO.GetComponent<Laser>();
+            PlayerProjectile weapon = weaponGO.GetComponent<PlayerProjectile>();
             weapon.Init(weaponPool, 1);
 
             AudioManager.Instance.PlaySFX(sound, soundVolume);

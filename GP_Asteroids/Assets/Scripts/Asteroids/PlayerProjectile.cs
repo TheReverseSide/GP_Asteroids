@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Asteroids
 {
-    public class Laser : MonoBehaviour {
+    public class PlayerProjectile : MonoBehaviour {
 
         private CollisionWithAsteroid collision;
 
