@@ -27,7 +27,6 @@ public class AnimPlayerIsMoving : MonoBehaviour
             anim.SetInteger("moving", 0);
             // Debug.Log(this + "Player still");
         }
-
     }
 
     public void playerSneezed()
