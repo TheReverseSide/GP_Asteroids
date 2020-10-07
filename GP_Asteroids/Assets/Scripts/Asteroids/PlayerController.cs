@@ -17,10 +17,13 @@ namespace Asteroids
 
         private Vector3 velocity;
         private Vector3 clampedVelocity;
+
+        Transform playerBodyRot;
         
         void Awake()
         {
             Reset();
+            playerBodyRot = transform.Find("PlayerBody").gameObject.transform;
         }
 
         public void Reset()
@@ -48,10 +51,31 @@ namespace Asteroids
                 // Debug.Log("Applying friction");
                 velocity *= friction;
             }
-            
+
+            if (velocity.x == 0.0f && velocity.y >= 0.1f)
+            {
+                // Debug.Log("Point up");
+                playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,0));
+            }else if (velocity.x < 0.0f && velocity.y == 0.0f)
+            {
+                // Debug.Log("Point left");
+                playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,90));
+            }else if (velocity.x > 0.0f && velocity.y == 0.0f)
+            {
+                // Debug.Log("Point right");
+                playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,270));
+            }else if (velocity.x == 0.0f && velocity.y < 0.0f)
+            {
+                // Debug.Log("Point down");
+                playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,180));
+            }
+            else
+            {
+                Debug.Log("Not moving");
+            }
+
             Vector3 displacement = velocity * Time.deltaTime;
             transform.localPosition += displacement;
         }
     }
 }
-
