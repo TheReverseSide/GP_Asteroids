@@ -8,9 +8,7 @@ public class AnimPlayerIsMoving : MonoBehaviour
     //integer to be set to 1 as long as someone is pushing W, A, S or D.
     //Needs to be attached to the GameObject: GameHolder/Player/PlayerBody
     
-    public Animator anim; 
-    //TODO - Fix anyKey
-    //TODO - Add sneezing integer
+    public Animator anim;
 
     private void Start()
     {
@@ -36,5 +34,6 @@ public class AnimPlayerIsMoving : MonoBehaviour
     {
         anim.SetInteger("sneezed", 1);
         Debug.Log("Called sneezed correctly");
+        anim.SetInteger("sneezed", 0);
     }
 }
