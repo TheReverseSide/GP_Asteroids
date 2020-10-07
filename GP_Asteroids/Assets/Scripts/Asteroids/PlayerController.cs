@@ -53,27 +53,39 @@ namespace Asteroids
             }
 
             // Rotates player according to velocity
-            if (velocity.x == 0.0f && velocity.y >= 0.1f)
+            if (velocity.x == 0.0f && velocity.y > 0.0f)
             {
                 // Debug.Log("Point up");
                 playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,0));
+            }else if (velocity.x < 0.0f && velocity.y > 0.0f)
+            {
+                // Debug.Log("Point upper left");
+                playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,45));
             }else if (velocity.x < 0.0f && velocity.y == 0.0f)
             {
                 // Debug.Log("Point left");
                 playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,90));
-            }else if (velocity.x > 0.0f && velocity.y == 0.0f)
+            }else if (velocity.x < 0.0f && velocity.y < 0.0f)
             {
-                // Debug.Log("Point right");
-                playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,270));
+                // Debug.Log("Point lower left");
+                playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,135));
             }else if (velocity.x == 0.0f && velocity.y < 0.0f)
             {
                 // Debug.Log("Point down");
                 playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,180));
+            }else if (velocity.x > 0.0f && velocity.y < 0.0f)
+            {
+                // Debug.Log("Point lower right");
+                playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,225));
+            }else if (velocity.x > 0.0f && velocity.y == 0.0f)
+            {
+                // Debug.Log("Point right");
+                playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,270));
+            }else if (velocity.x > 0.0f && velocity.y > 0.0f)
+            {
+                // Debug.Log("Point upper right");
+                playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,315));
             }
-            // else
-            // {
-            //     Debug.Log("Not moving");
-            // }
 
             Vector3 displacement = velocity * Time.deltaTime;
             transform.localPosition += displacement;
