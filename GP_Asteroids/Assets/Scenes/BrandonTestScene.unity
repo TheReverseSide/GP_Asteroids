@@ -2244,6 +2244,16 @@ PrefabInstance:
       propertyPath: friction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6821550854158595232, guid: 85a01035942ba4db4a0dd115defef86a,
+        type: 3}
+      propertyPath: maxSpeed
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821550854158595232, guid: 85a01035942ba4db4a0dd115defef86a,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 3.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6821550854158595238, guid: 85a01035942ba4db4a0dd115defef86a,
         type: 3}
       propertyPath: fireRate
