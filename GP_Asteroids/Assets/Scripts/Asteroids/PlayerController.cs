@@ -17,17 +17,17 @@ namespace Asteroids
 
         private Vector3 velocity;
         private Vector3 clampedVelocity;
-
-        Transform playerBodyRot;
+        
+        private Transform playerBodyRot;
         
         void Awake()
         {
             Reset();
-            playerBodyRot = transform.Find("PlayerBody").gameObject.transform;
         }
 
         public void Reset()
         {
+            playerBodyRot = transform.Find("PlayerBody").gameObject.transform;
             velocity = Vector3.zero;
             clampedVelocity = Vector3.zero;
         }
@@ -52,6 +52,7 @@ namespace Asteroids
                 velocity *= friction;
             }
 
+            // Rotates player according to velocity
             if (velocity.x == 0.0f && velocity.y >= 0.1f)
             {
                 // Debug.Log("Point up");
@@ -69,10 +70,10 @@ namespace Asteroids
                 // Debug.Log("Point down");
                 playerBodyRot.rotation = Quaternion.Euler(new Vector3(0,0,180));
             }
-            else
-            {
-                Debug.Log("Not moving");
-            }
+            // else
+            // {
+            //     Debug.Log("Not moving");
+            // }
 
             Vector3 displacement = velocity * Time.deltaTime;
             transform.localPosition += displacement;

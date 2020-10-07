@@ -41,7 +41,7 @@ namespace Asteroids
         {
             gameObject.transform.position = Vector3.zero; //Place at center
             gameObject.SetActive(true);
-            //shield.Show();
+            audioInputManager.enabled = true;
         }
 
         private void OnCollisionWithAsteroid(Asteroid asteroid)
@@ -52,12 +52,7 @@ namespace Asteroids
             // Kill the player
             controller.Reset();
             playerDeath.Die();
-            //TODO - This needs to be reactivated at some point
-            // var children = new List<GameObject>();
-            // foreach (Transform child in transform) children.Add(child.gameObject);
-            // children.ForEach(child => child.gameObject.SetActive(false));
-            // audioInputManager.enabled = false;
-                // SetActive(false);
+            audioInputManager.enabled = false;
             gameObject.SetActive(false);
         }
 

@@ -24,7 +24,9 @@ namespace Asteroids
         private float nextFire = 1.25f;
 
         private float startTime = 0.0f;
-        private float endTime = 0.0f; 
+        private float endTime = 0.0f;
+
+        public AnimPlayerIsMoving animPlayerIsMoving;
         
         void Awake() {
             weaponPool = GetComponent<ObjectPool>();
@@ -62,6 +64,9 @@ namespace Asteroids
 
         public void Fire()
         {
+            //Notify AnimPlayerIsMoving
+            animPlayerIsMoving.playerSneezed();
+            
             // get game object from pool.
             GameObject weaponGO = weaponPool.GetGameObject();
             weaponGO.transform.position = emitterTransform.position;
