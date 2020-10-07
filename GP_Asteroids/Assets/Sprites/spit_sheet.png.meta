@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: d1a975d0e7abf274ba3fdc638c9fecf8
+guid: 0798b57985206c644b802e6c2dab6009
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2402427644016811576
-    second: Head_Idle_sheet_0
+      213: -5978189334896215111
+    second: spit_sheet_0
   - first:
-      213: -6552036197694201771
-    second: Head_Idle_sheet_1
+      213: -6724143269788881416
+    second: spit_sheet_1
   - first:
-      213: 690156508870483387
-    second: Head_Idle_sheet_2
+      213: 6557893293017685488
+    second: spit_sheet_2
   - first:
-      213: -8324321511070372528
-    second: Head_Idle_sheet_3
-  - first:
-      213: -6147362582370177885
-    second: Head_Idle_sheet_4
-  - first:
-      213: -239156858767864149
-    second: Head_Idle_sheet_5
+      213: 4124544259092580098
+    second: spit_sheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -79,7 +73,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -91,7 +85,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -105,13 +99,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Head_Idle_sheet_0
+      name: spit_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb7b754974390da0800000000000000
+      internalID: -5978189334896215111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spit_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd6669725b0fa2a0800000000000000
+      internalID: -6724143269788881416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spit_sheet_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 176
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83e5330b633275120800000000000000
-      internalID: 2402427644016811576
+      spriteID: 0fd5c3d6431520b50800000000000000
+      internalID: 6557893293017685488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Head_Idle_sheet_1
+      name: spit_sheet_3
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 0
-        width: 128
-        height: 176
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,92 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 550afe8dacd7215a0800000000000000
-      internalID: -6552036197694201771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Head_Idle_sheet_2
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 176
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbd16ae20bde39900800000000000000
-      internalID: 690156508870483387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Head_Idle_sheet_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 176
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05de18890b11a7c80800000000000000
-      internalID: -8324321511070372528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Head_Idle_sheet_4
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 176
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ac2c4c2d4e20baa0800000000000000
-      internalID: -6147362582370177885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Head_Idle_sheet_5
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 176
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bae0b83aa185eacf0800000000000000
-      internalID: -239156858767864149
+      spriteID: 207079f96235d3930800000000000000
+      internalID: 4124544259092580098
       vertices: []
       indices: 
       edges: []
@@ -233,7 +185,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8100ff66c8624bd4caba171884886cbf
+    spriteID: fd07e3d695c13a249babd63eee5cc28b
     internalID: 0
     vertices: []
     indices: 
