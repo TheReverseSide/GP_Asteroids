@@ -15,9 +15,6 @@ namespace Asteroids.UI
 
 		[SerializeField]
 		private ScoreScreen scoreScreen;
-
-		[SerializeField] 
-		private PauseScreen pauseScreen;
 		
 		[SerializeField]
 		private RectTransform transitionOverlay;
