@@ -180,11 +180,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58ce0240d307e47a99e2d3ab0cbf422b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsValue: 500
+  pointsValue: 250
   asteroids:
-  - {fileID: 116476, guid: 718814e5c607341a791f85dad9fc6882, type: 3}
-  childAsteroids:
-  - {fileID: 0}
+  - {fileID: 2514364080229828771}
+  childAsteroids: []
   collisionSound: {fileID: 8300000, guid: f7e0982a9ab78436ba04750b3e92dc6c, type: 3}
   explosionParticlesPrefab: {fileID: 100000, guid: a19897df3c2774feaba0cd38d264a0be,
     type: 3}

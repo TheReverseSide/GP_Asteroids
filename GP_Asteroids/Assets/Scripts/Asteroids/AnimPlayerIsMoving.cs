@@ -10,11 +10,6 @@ public class AnimPlayerIsMoving : MonoBehaviour
     
     public Animator anim;
 
-    private void Start()
-    {
-        anim.SetInteger("sneezed", 0);
-    }
-
     void Update()
     {
         if (Input.GetAxis("Horizontal") != 0.0f || Input.GetAxis("Vertical") != 0.0f)
@@ -27,12 +22,5 @@ public class AnimPlayerIsMoving : MonoBehaviour
             anim.SetInteger("moving", 0);
             // Debug.Log(this + "Player still");
         }
-    }
-
-    public void playerSneezed()
-    {
-        anim.SetInteger("sneezed", 1);
-        Debug.Log("Called sneezed correctly");
-        anim.SetInteger("sneezed", 0);
     }
 }

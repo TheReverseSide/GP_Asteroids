@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class AnimPlayerIsSneezing : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Animator anim;
+    
+    private void Start()
     {
-        
+        anim.SetInteger("sneezed", 0);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void playerSneezed()
     {
-        
+        anim.SetInteger("sneezed", 1);
+        // Debug.Log("Called sneezed correctly");
+        anim.SetInteger("sneezed", 0);
     }
 }

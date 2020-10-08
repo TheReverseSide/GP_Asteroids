@@ -182,7 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointsValue: 500
   asteroids:
-  - {fileID: 116476, guid: 718814e5c607341a791f85dad9fc6882, type: 3}
+  - {fileID: 2514364080229828771}
   childAsteroids:
   - {fileID: 2514364080229828771, guid: dcd36e4021b8549808de71370f740c73, type: 3}
   - {fileID: 2514364080229828771, guid: dcd36e4021b8549808de71370f740c73, type: 3}
