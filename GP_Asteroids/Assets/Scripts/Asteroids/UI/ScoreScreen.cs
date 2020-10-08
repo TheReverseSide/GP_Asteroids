@@ -55,22 +55,18 @@ namespace Asteroids.UI
             if( !isComplete ) {
                 if( Input.GetKeyDown( KeyCode.Space ) ) {
                     StartPressed();
+                }else if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    QuitGame();
                 }
             }
         }
 
-        //===================================================
-        // PUBLIC METHODS
-        //===================================================
-
-
-        //===================================================
-        // PRIVATE METHODS
-        //===================================================
-
-        /// <summary>
-        /// Dispatches complete when SPACE is Pressed.
-        /// </summary>
+        private void QuitGame()
+        {
+            Application.Quit();
+        }
+        
         private void StartPressed() {
             AudioManager.Instance.PlaySFX( startSFX );
             isComplete = true;
