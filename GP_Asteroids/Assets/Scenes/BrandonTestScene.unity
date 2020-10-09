@@ -480,7 +480,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2750,7 +2750,7 @@ PrefabInstance:
     - target: {fileID: 8985777567828621916, guid: 4fd41269fa723477d9d077cdab4e7c6d,
         type: 3}
       propertyPath: m_Text
-      value: CORONA-STEROIDS(?)
+      value: CORONA-STEROIDS
       objectReference: {fileID: 0}
     - target: {fileID: 8985777567828621916, guid: 4fd41269fa723477d9d077cdab4e7c6d,
         type: 3}

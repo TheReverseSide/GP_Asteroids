@@ -37,6 +37,17 @@ namespace Asteroids
             // shield = GetComponent<PlayerShield>();
         }
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                controller.Reset();
+                playerDeath.Die();
+                audioInputManager.enabled = false;
+                gameObject.SetActive(false);
+            }
+        }
+
         public void Spawn()
         {
             gameObject.transform.position = Vector3.zero; //Place at center
