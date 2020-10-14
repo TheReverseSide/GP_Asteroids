@@ -57,7 +57,7 @@ namespace Asteroids
             {
                 // Debug.Log("Firing!" + Time.time);
                 isFiring = true;
-                fireWeapon.Fire();
+                fireWeapon.Fire(true);
                 Task.Delay(500).ContinueWith(t=> setFiringFalse());
             }
             MicLoudness = LevelMax ();

@@ -40,18 +40,18 @@ namespace Asteroids
             // mouse button and Space.
             if( Input.GetButton( "Fire1" ) )
             {
-                FireChecker();
+                FireChecker(false);
             } 
         }
 
-        public void FireChecker()
+        public void FireChecker(bool microphone)
         {
             endTime = Time.time;
             
             if (fireRate == 0 && (endTime - startTime) > 1f)
             {
                 //Second part prevents that first erroneus firing
-                Fire();
+                Fire(microphone);
             }
             else if (Input.GetButton("Fire1") && Time.time > nextFire && fireRate > 0)
             {
@@ -59,11 +59,11 @@ namespace Asteroids
                 //to hold the button, as "GetButtonDown" only returns true the frame the button
                 //is pressed, and while its hold, is false, so the "else" will run, and so will this.
                 nextFire = Time.time + fireRate;
-                Fire();
+                Fire(microphone);
             }
         }
 
-        public void Fire()
+        public void Fire(bool microphone)
         {
             //Notify AnimPlayerIsMoving
             animPlayerIsSneezing.playerSneezed();
@@ -77,7 +77,11 @@ namespace Asteroids
             PlayerProjectile weapon = weaponGO.GetComponent<PlayerProjectile>();
             weapon.Init(weaponPool, 1);
 
-            AudioManager.Instance.PlaySFX(sound, soundVolume);
+            if (!microphone)
+            {
+                // print("Play sound");
+                AudioManager.Instance.PlaySFX(sound, soundVolume);
+            }
         }
     }
 }

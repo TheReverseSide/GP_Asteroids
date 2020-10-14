@@ -56,7 +56,7 @@ namespace Asteroids
 
             if (health.Value > 0)
             {
-                flashColor.Flash();
+                //flashColor.Flash();
             }
             else
             {

@@ -10,6 +10,11 @@ public class AnimPlayerIsMoving : MonoBehaviour
 
     public Animator anim;
     public GameObject playerHead;
+    public AudioManager audioManager;
+
+    [SerializeField] private AudioClip runningClip; //steps_loop_longNEW2
+    [SerializeField] private AudioClip slidingClip; //Skwik1_short
+
     
     void Update()
     {
@@ -18,13 +23,15 @@ public class AnimPlayerIsMoving : MonoBehaviour
         if (Input.GetAxis("Horizontal") != 0.0f || Input.GetAxis("Vertical") != 0.0f)
         {
             anim.SetInteger("moving", 1);
+            audioManager.PlaySFX(runningClip);
             
             // Debug.Log(this + "Player moving");
         }
         else
         {
             anim.SetInteger("moving", 0);
-            
+            audioManager.PlaySFX(slidingClip);
+
             // Debug.Log(this + "Player still");
         }
     }
@@ -35,16 +42,16 @@ public class AnimPlayerIsMoving : MonoBehaviour
         dir = playerHead.transform.InverseTransformDirection(dir);
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         
-        print(angle);
+        // print(angle);
         
         if (angle >= 110) // Super far to right
         {
-            print("Turned far to right");
+            // print("Turned far to right");
             anim.SetInteger("turnedFarRight", 1);
         }
         else if (angle <= -110) // Super far to left
         {
-            print("Turned far to left");
+            // print("Turned far to left");
             anim.SetInteger("turnedFarLeft", 1); 
         }
         else

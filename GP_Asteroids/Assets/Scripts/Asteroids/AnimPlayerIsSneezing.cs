@@ -13,8 +13,13 @@ public class AnimPlayerIsSneezing : MonoBehaviour
 
     public void playerSneezed()
     {
-        anim.SetInteger("sneezed", 1);
-        // Debug.Log("Called sneezed correctly");
+        StartCoroutine(CallSneezed());
+    }
+    
+    public IEnumerator CallSneezed(){
+        //Currently blinks forever
+        anim.SetInteger("sneezed", 1); 
+        yield return new WaitForSeconds(.1f);
         anim.SetInteger("sneezed", 0);
     }
 }
