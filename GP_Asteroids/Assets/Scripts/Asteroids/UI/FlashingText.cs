@@ -1,18 +1,29 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class FlashingText : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+
+    Text flashingText;
+ 
+    void Start(){
+        flashingText = this.GetComponent<Text>();
+        StartCoroutine(BlinkText());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    //function to blink the text
+    public IEnumerator BlinkText(){
+        //Currently blinks forever
+        while(true){
+            //set the Text's text to blank
+            
+            flashingText.text= "PRESS 'SPACE' TO START";
+            yield return new WaitForSeconds(.7f);
+            
+            flashingText.text= "";
+            yield return new WaitForSeconds(.7f);
+        }
     }
 }
