@@ -38,10 +38,15 @@ public class AudioManager : MonoBehaviour
             sfxSource.volume = volume;
             sfxSource.Play();
         }
-        else
-        {
-            PlayDynamicSound(clip, volume);
-        }
+        // else
+        // {
+        //     PlayDynamicSound(clip, volume);
+        // }
+    }
+
+    public void StopSound()
+    {
+        sfxSource.Stop();
     }
 
     public void PlayMusic(AudioClip clip, float volume = 1.0f)

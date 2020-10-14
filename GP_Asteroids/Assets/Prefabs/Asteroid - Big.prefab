@@ -69,13 +69,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58ce0240d307e47a99e2d3ab0cbf422b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   pointsValue: 100
   asteroids:
   - {fileID: 116476}
   childAsteroids:
   - {fileID: 100318, guid: f497d9b3491294b71afbacb5c6eb6987, type: 3}
   - {fileID: 100318, guid: f497d9b3491294b71afbacb5c6eb6987, type: 3}
-  collisionSound: {fileID: 8300000, guid: 3f3170794bbb74a19a1cc65f5924bafb, type: 3}
+  collisionSound: {fileID: 8300000, guid: cd674682ec4054c1bb4d0078a313c00f, type: 3}
   explosionParticlesPrefab: {fileID: 100000, guid: a19897df3c2774feaba0cd38d264a0be,
     type: 3}
 --- !u!114 &11468858

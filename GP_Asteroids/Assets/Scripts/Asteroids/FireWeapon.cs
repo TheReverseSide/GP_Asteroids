@@ -80,7 +80,7 @@ namespace Asteroids
             if (!microphone)
             {
                 // print("Play sound");
-                AudioManager.Instance.PlaySFX(sound, soundVolume);
+                this.GetComponent<AudioSource>().Play();
             }
         }
     }

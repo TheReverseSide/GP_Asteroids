@@ -20,7 +20,7 @@ namespace Asteroids
         [SerializeField] private GameObject[] asteroids;
         [SerializeField] private GameObject[] childAsteroids;
 
-        [SerializeField] private AudioClip collisionSound;
+        // [SerializeField] private AudioClip collisionSound;
 
         [SerializeField] private GameObject explosionParticlesPrefab;
 
@@ -52,7 +52,7 @@ namespace Asteroids
         {
             health.ReduceHealth(damage);
 
-            //FIXME AudioManager.Instance.PlaySFX(collisionSound);
+            this.GetComponent<AudioSource>().Play();
 
             if (health.Value > 0)
             {
@@ -60,7 +60,7 @@ namespace Asteroids
             }
             else
             {
-                anim.SetInteger("destroyed", 1);
+                //anim.SetInteger("destroyed", 1);
                 GameObject particles =
                     Instantiate(explosionParticlesPrefab, transform.position, Quaternion.identity) as GameObject;
                 Destroy(particles, 2.5f);
@@ -70,7 +70,7 @@ namespace Asteroids
                     EventDie(this, pointsValue, transform.position, childAsteroids);
                 }
 
-                Destroy(gameObject, .25f);
+                Destroy(gameObject, .1f);
             }
         }
 

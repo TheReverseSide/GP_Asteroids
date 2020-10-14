@@ -15,7 +15,7 @@ namespace Asteroids
         [SerializeField, Range(0f, 100f)] float maxSpeed = 7f;
         [SerializeField, Range(0f, 100f)] float maxAcceleration = 10f;
 
-        private Vector3 velocity;
+        public Vector3 velocity;
         private Vector3 clampedVelocity;
         
         private Transform playerBodyRot;
