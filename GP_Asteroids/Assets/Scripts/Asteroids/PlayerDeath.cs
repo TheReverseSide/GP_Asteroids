@@ -20,7 +20,7 @@ namespace Asteroids
             explosionGO = Instantiate(explosionPrefab, transform.position, Quaternion.identity) as GameObject;
             // I wonder why typecasting is necessary here
 
-            // AudioManager.Instance.PlaySFX(deathSound);
+            AudioManager.Instance.StopSound();
             
             Invoke("DieComplete", duration); //Corout cause we are waiting for explosion to finish (?)
         }

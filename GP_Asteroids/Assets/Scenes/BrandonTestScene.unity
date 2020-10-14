@@ -238,10 +238,11 @@ AudioSource:
   m_GameObject: {fileID: 272920665}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 641a3e682e5bc437abfe1a824cd48592,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: b455c4d7f32c74957a2d65ddcb1c2826, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.685
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -938,10 +939,11 @@ AudioSource:
   m_GameObject: {fileID: 1022180831}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 065e127994ba3420ab2c0bdc712ddcb3, type: 3}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 641a3e682e5bc437abfe1a824cd48592,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 8acf67145440d4115be7c2e2b08f26d3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.113
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1015,7 +1017,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.219
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1686,16 +1688,17 @@ AudioSource:
   m_GameObject: {fileID: 2002564381}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 641a3e682e5bc437abfe1a824cd48592,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: b9d47dc394aa34591893c34aa77ddcd0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.36
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1763,7 +1766,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.519
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2587,6 +2590,11 @@ PrefabInstance:
       propertyPath: waveText
       value: 
       objectReference: {fileID: 1841919555}
+    - target: {fileID: 915955335629032592, guid: 69c8aa39b40b143689a8cb003bae12f4,
+        type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 8300000, guid: ea61b8618e20145dab052d495b9766e5, type: 3}
     - target: {fileID: 983269769377815332, guid: 69c8aa39b40b143689a8cb003bae12f4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3194,7 +3202,7 @@ PrefabInstance:
         type: 3}
       propertyPath: music
       value: 
-      objectReference: {fileID: 8300000, guid: b240e9a8f9b2d42319f772748384b428, type: 3}
+      objectReference: {fileID: 8300000, guid: 5496b99f68a0c4927a04542ef60fdbfc, type: 3}
     - target: {fileID: 5984837625629309785, guid: 4fd41269fa723477d9d077cdab4e7c6d,
         type: 3}
       propertyPath: m_Name

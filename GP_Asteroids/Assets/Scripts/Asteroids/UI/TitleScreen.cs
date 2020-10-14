@@ -24,7 +24,7 @@ namespace Asteroids.UI
         
         void OnEnable() {
             isComplete = false;
-            AudioManager.Instance.PlayMusic( music );
+            AudioManager.Instance.PlaySFX( music);
         }
         
         void Update() {

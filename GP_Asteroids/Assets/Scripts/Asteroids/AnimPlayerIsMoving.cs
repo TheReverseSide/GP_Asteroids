@@ -25,7 +25,7 @@ public class AnimPlayerIsMoving : MonoBehaviour
         if (Input.GetAxis("Horizontal") != 0.0f || Input.GetAxis("Vertical") != 0.0f)
         {
             anim.SetInteger("moving", 1);
-            audioManager.PlaySFX(runningClip);
+            audioManager.PlaySFX(runningClip, .5f);
             // Debug.Log("moving");
         }
         else if(playerController.velocity.x != 0.0f || playerController.velocity.y != 0.0f) // If player is not adding to velocity but still moving

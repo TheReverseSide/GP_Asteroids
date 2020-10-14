@@ -42,7 +42,7 @@ namespace Asteroids.UI
             levelStartText.gameObject.SetActive( false );
 
             GameManager.Instance.StartGame();
-            AudioManager.Instance.PlayMusic( music );
+            AudioManager.Instance.PlayMusic( music, .7f);
         }
 
         //===================================================
