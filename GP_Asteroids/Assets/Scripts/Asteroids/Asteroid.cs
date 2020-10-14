@@ -14,6 +14,7 @@ namespace Asteroids
 
         public event Action<Asteroid, int, Vector3, GameObject[]> EventDie; //This plugs into AsteroidSpawner
         //Is this how it gets the content?
+        public Animator anim;
 
         [SerializeField] private int pointsValue;
         [SerializeField] private GameObject[] asteroids;
@@ -59,16 +60,17 @@ namespace Asteroids
             }
             else
             {
+                anim.SetInteger("destroyed", 1);
                 GameObject particles =
                     Instantiate(explosionParticlesPrefab, transform.position, Quaternion.identity) as GameObject;
-                Destroy(particles, 1.0f);
+                Destroy(particles, 2.5f);
 
                 if (EventDie != null)
                 {
                     EventDie(this, pointsValue, transform.position, childAsteroids);
                 }
 
-                Destroy(gameObject);
+                Destroy(gameObject, .25f);
             }
         }
 
