@@ -12,10 +12,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5983356957287712873}
@@ -43,10 +43,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7922878699554911686}
@@ -179,10 +179,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6699450917490379875}
@@ -290,10 +290,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7922878699554911686}
@@ -321,10 +321,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7166287133864816889}
@@ -352,10 +352,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7166287133864816889}
@@ -461,10 +461,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4870539087790959153}
@@ -598,10 +598,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2141017380602918948}
@@ -707,13 +707,13 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: right
+  - m_Name: turnedFarRight
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: left
+  - m_Name: turnedFarLeft
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -769,10 +769,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1047128316451379133}
@@ -800,10 +800,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4129382448282202748}
@@ -831,10 +831,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4870539087790959153}
@@ -862,10 +862,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5983356957287712873}
@@ -893,10 +893,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7166287133864816889}
@@ -949,10 +949,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5983356957287712873}
@@ -980,10 +980,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4870539087790959153}
@@ -1066,10 +1066,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4129382448282202748}
@@ -1097,10 +1097,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7922878699554911686}
@@ -1128,10 +1128,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4870539087790959153}
@@ -1159,10 +1159,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4129382448282202748}
@@ -1250,10 +1250,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7922878699554911686}
@@ -1281,10 +1281,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5983356957287712873}
@@ -1342,10 +1342,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4129382448282202748}
@@ -1428,10 +1428,10 @@ AnimatorStateTransition:
     m_ConditionEvent: moving
     m_EventTreshold: 1
   - m_ConditionMode: 6
-    m_ConditionEvent: right
+    m_ConditionEvent: turnedFarRight
     m_EventTreshold: 0
   - m_ConditionMode: 6
-    m_ConditionEvent: left
+    m_ConditionEvent: turnedFarLeft
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6699450917490379875}
