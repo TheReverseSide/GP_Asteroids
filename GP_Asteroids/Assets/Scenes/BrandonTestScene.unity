@@ -1679,6 +1679,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3799795231774417456}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2043301105 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8713044740496845808, guid: 126fbfdf77b4b4d13be67f410d122224,
+    type: 3}
+  m_PrefabInstance: {fileID: 3799795231774417456}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043301104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 789eb1f6e064143848b8bbd627491c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2043301106 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4455909689069007429, guid: 126fbfdf77b4b4d13be67f410d122224,
@@ -3064,6 +3076,11 @@ PrefabInstance:
       propertyPath: startText
       value: 
       objectReference: {fileID: 5032866460519263088}
+    - target: {fileID: 4769471359398012866, guid: 4fd41269fa723477d9d077cdab4e7c6d,
+        type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 8300000, guid: b240e9a8f9b2d42319f772748384b428, type: 3}
     - target: {fileID: 5984837625629309785, guid: 4fd41269fa723477d9d077cdab4e7c6d,
         type: 3}
       propertyPath: m_Name
@@ -3344,6 +3361,21 @@ PrefabInstance:
       propertyPath: playerHead
       value: 
       objectReference: {fileID: 343693609}
+    - target: {fileID: 6821550854852005017, guid: 85a01035942ba4db4a0dd115defef86a,
+        type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 2043301105}
+    - target: {fileID: 6821550854852005017, guid: 85a01035942ba4db4a0dd115defef86a,
+        type: 3}
+      propertyPath: runningClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 065e127994ba3420ab2c0bdc712ddcb3, type: 3}
+    - target: {fileID: 6821550854852005017, guid: 85a01035942ba4db4a0dd115defef86a,
+        type: 3}
+      propertyPath: slidingClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ae4bdd2e3fd74ffcbe8d7a324d68ad0, type: 3}
     - target: {fileID: 6821550854874514089, guid: 85a01035942ba4db4a0dd115defef86a,
         type: 3}
       propertyPath: m_Enabled
