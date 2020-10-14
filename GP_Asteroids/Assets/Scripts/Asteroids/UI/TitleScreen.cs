@@ -24,7 +24,7 @@ namespace Asteroids.UI
         
         void OnEnable() {
             isComplete = false;
-            // FIXME AudioManager.Instance.PlayMusic( music );
+            AudioManager.Instance.PlayMusic( music );
         }
         
         void Update() {
