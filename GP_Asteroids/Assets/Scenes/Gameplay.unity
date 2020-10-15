@@ -2602,7 +2602,7 @@ PrefabInstance:
     - target: {fileID: 234350496575684551, guid: 69c8aa39b40b143689a8cb003bae12f4,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 794603661622796294, guid: 69c8aa39b40b143689a8cb003bae12f4,
         type: 3}
@@ -2941,12 +2941,12 @@ PrefabInstance:
     - target: {fileID: 4933687789581232782, guid: 69c8aa39b40b143689a8cb003bae12f4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -23.082
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4933687789581232782, guid: 69c8aa39b40b143689a8cb003bae12f4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 40
+      value: -106
       objectReference: {fileID: 0}
     - target: {fileID: 6503454462875200430, guid: 69c8aa39b40b143689a8cb003bae12f4,
         type: 3}
@@ -3045,10 +3045,20 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 85.18434
       objectReference: {fileID: 0}
+    - target: {fileID: 8961043929600260270, guid: 69c8aa39b40b143689a8cb003bae12f4,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961043929600260270, guid: 69c8aa39b40b143689a8cb003bae12f4,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9055225090175459743, guid: 69c8aa39b40b143689a8cb003bae12f4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 79.999985
+      value: -65.99997
       objectReference: {fileID: 0}
     - target: {fileID: 9055225090175459743, guid: 69c8aa39b40b143689a8cb003bae12f4,
         type: 3}
@@ -3058,7 +3068,7 @@ PrefabInstance:
     - target: {fileID: 9055225090175459743, guid: 69c8aa39b40b143689a8cb003bae12f4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -51.541
+      value: -25.458984
       objectReference: {fileID: 0}
     - target: {fileID: 9055225090175459743, guid: 69c8aa39b40b143689a8cb003bae12f4,
         type: 3}
