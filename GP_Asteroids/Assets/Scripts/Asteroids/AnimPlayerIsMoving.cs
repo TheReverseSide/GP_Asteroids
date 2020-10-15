@@ -50,17 +50,17 @@ public class AnimPlayerIsMoving : MonoBehaviour
         if (angle >= 110) // Super far to right
         {
             // print("Turned far to right");
-            // anim.SetInteger("turnedFarRight", 1);
+            anim.SetInteger("turnedFarRight", 1);
         }
         else if (angle <= -110) // Super far to left
         {
             // print("Turned far to left");
-            // anim.SetInteger("turnedFarLeft", 1); 
+            anim.SetInteger("turnedFarLeft", 1); 
         }
         else
         {
-            // anim.SetInteger("turnedFarLeft", 0); 
-            // anim.SetInteger("turnedFarRight", 0);
+            anim.SetInteger("turnedFarLeft", 0); 
+            anim.SetInteger("turnedFarRight", 0);
         }
     }
 }

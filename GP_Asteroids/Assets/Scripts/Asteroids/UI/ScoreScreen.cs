@@ -25,32 +25,15 @@ namespace Asteroids.UI
 
         private bool isComplete;
 
-        //===================================================
-        // UNITY METHODS
-        //===================================================
-
-        /// <summary>
-        /// Awake.
-        /// </summary>
-        void Awake() {
-
-        }
-
-        /// <summary>
-        /// OnEnable.
-        /// </summary>
         void OnEnable() {
             isComplete = false;
             scoreText.text = GameManager.Instance.Points.ToString();
             waveText.text = GameManager.Instance.Level.ToString();
 
-            AudioManager.Instance.PlayMusic( music );
+            AudioManager.Instance.PlaySFX( music );
             GameManager.Instance.ResetGame();
         }
-
-        /// <summary>
-        /// Update.
-        /// </summary>
+        
         void Update() {
             if( !isComplete ) {
                 if( Input.GetKeyDown( KeyCode.Space ) ) {
