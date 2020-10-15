@@ -43,10 +43,10 @@ public class AnimPlayerIsMoving : MonoBehaviour
 
     void CalculateHeadBodyAngle()
     {
-        Vector3 dir = playerHead.transform.localPosition - transform.localPosition;
-        dir = playerHead.transform.InverseTransformDirection(dir);
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        float angle = Quaternion.Angle(transform.rotation, playerHead.transform.rotation);
 
+        // print(angle);
+        
         if (angle >= 110) // Super far to right
         {
             // print("Turned far to right");
