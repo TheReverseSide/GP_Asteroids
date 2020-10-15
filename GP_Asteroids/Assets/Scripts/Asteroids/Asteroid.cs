@@ -60,7 +60,7 @@ namespace Asteroids
             }
             else
             {
-                anim.SetInteger("destroyed", 1);
+                //anim.SetInteger("destroyed", 1);
                 GameObject particles =
                     Instantiate(explosionParticlesPrefab, transform.position, Quaternion.identity) as GameObject;
                 Destroy(particles, 2.5f);
