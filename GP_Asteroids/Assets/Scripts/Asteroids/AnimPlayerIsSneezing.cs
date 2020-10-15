@@ -5,7 +5,8 @@ using UnityEngine;
 public class AnimPlayerIsSneezing : MonoBehaviour
 {
     public Animator anim;
-    
+
+    [SerializeField] private float secs;
     private void Start()
     {
         anim.SetInteger("sneezed", 0);
@@ -19,7 +20,7 @@ public class AnimPlayerIsSneezing : MonoBehaviour
     public IEnumerator CallSneezed(){
         //Currently blinks forever
         anim.SetInteger("sneezed", 1); 
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(secs);
         anim.SetInteger("sneezed", 0);
     }
 }

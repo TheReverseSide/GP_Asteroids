@@ -43,7 +43,7 @@ public class AnimPlayerIsMoving : MonoBehaviour
 
     void CalculateHeadBodyAngle()
     {
-        Vector3 dir = playerHead.transform.position - transform.position;
+        Vector3 dir = playerHead.transform.localPosition - transform.localPosition;
         dir = playerHead.transform.InverseTransformDirection(dir);
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 

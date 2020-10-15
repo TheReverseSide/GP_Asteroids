@@ -1440,6 +1440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1803029138}
+  secs: 0.15
 --- !u!95 &1803029138 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6821550854874514088, guid: 85a01035942ba4db4a0dd115defef86a,
