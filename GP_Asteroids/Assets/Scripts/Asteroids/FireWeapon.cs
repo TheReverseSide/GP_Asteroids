@@ -53,12 +53,7 @@ namespace Asteroids
         {
             endTime = Time.time;
             
-            if (fireRate == 0 && (endTime - startTime) > 1f)
-            {
-                //Second part prevents that first erroneus firing
-                Fire(microphone);
-            }
-            else if (Input.GetButton("Fire1") && Time.time > nextFire && fireRate > 0)
+            if (Time.time > nextFire && fireRate > 0)
             {
                 //I added "&& fireRate > 0", because if not, this will run if the user decides
                 //to hold the button, as "GetButtonDown" only returns true the frame the button
