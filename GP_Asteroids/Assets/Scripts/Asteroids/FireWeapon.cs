@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Asteroids
 {
@@ -14,9 +17,11 @@ namespace Asteroids
         [SerializeField]
         private Transform emitterTransform;
 
-        [SerializeField]
-        private AudioClip sound;
+        // [SerializeField]
+        // private AudioClip sound;
 
+        public AudioClip[] audioClips;
+        
         [SerializeField]
         private float soundVolume = 0.4f;
 
@@ -80,8 +85,14 @@ namespace Asteroids
             if (!microphone)
             {
                 // print("Play sound");
-                this.GetComponent<AudioSource>().Play();
+                PickAndPlayAudio();
             }
+        }
+
+        void PickAndPlayAudio()
+        {
+            this.GetComponent<AudioSource>().clip = audioClips[Random.Range(0, 8)];
+            this.GetComponent<AudioSource>().Play();
         }
     }
 }
